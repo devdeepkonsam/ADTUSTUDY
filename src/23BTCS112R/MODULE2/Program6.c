@@ -1,16 +1,18 @@
 #include <stdio.h>
-int main()
-{
-    int n,ans=0;
-    printf("Enter the number : ");
+int main(){
+    int n,remainder,originaln,result=0;
+    printf("Enter the number: ");
     scanf("%d",&n);
-    while(n>0){
-        int temp = n%10;
-        ans = ans+(temp*temp*temp);
-        n /= 10;
-    }
-    if(n==ans)printf("true");
-    else printf("false");
+    originaln=n;
+    while(n!=0){
+     remainder = n%10;
+     result += remainder*remainder*remainder;
+     n /= 10;
+     }
+    /*if(result==originaln) printf("%d is Armstrong number",originaln);
+    else printf("%d is a Armstrong number",originaln); */
+    (result==originaln)? printf("%d is a Armstrong number",originaln):printf("%d is a Armstrong number",originaln);
     return 0;
 
 }
+
