@@ -15,5 +15,6 @@ int main ()
     num2 = num1^num2;
     num1 = num1^num2;
     printf("after swap num1=%d and num2=%d",num1,num2);
+    
     return 0;
 }
