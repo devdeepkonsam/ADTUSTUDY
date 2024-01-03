@@ -9,7 +9,7 @@ int main(){
         count++;
     }
     printf("The length of the string is %d\n",count);
-    printf("The length of the string is %d",strlen(string));
+    printf("The length of the string is %d\n",strlen(string));
     printf("%d",sizeof("hello"));
     return 0;
 }

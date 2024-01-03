@@ -12,7 +12,7 @@ int main(){
     }
 }
 int prime(int num){
-    for(int i = 2; i < sqrt(num)+1;i++){
+    for(int i = 2; i <= sqrt(num);i++){
         if(num%i==0){
             return 0;
         }
